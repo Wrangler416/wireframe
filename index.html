@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
-    <title>WireFrame Layout</title>
+    <title>Flex Layout</title>
     <style>
       body {
         background: white;
@@ -31,17 +31,7 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 10px; 
       }
-      .one {
-        background-color: grey;
-        height: 250px;
-        position: relative; 
-      }
-      .two {
-        background-color: grey;
-        height: 250px;
-        position: relative; 
-      }
-      .three {
+      .box {
         background-color: grey;
         height: 250px;
         position: relative; 
@@ -51,16 +41,16 @@
   <body>
     <header class="header"></header>
     <div class="hero"></div>
-    <div class="container">
-      <div class="wrapper">
-      <section-one class="one">
-      </section-one>
-      <section-two class="two">
-      </section-two>
-      <section-three class="three">
-      </section-three>
-    </div>
-  </div>
+      <div class="container">
+       <div class="wrapper">
+          <section-one class="box">
+          </section-one>
+          <section-two class="box">
+          </section-two>
+          <section-three class="box">
+          </section-three>
+       </div>
+     </div>
  </body>
 </html>
 
